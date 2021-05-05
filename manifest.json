@@ -1,0 +1,37 @@
+{
+    "name": "ScreenCap",
+    "description": "",
+    "version": "1.0",
+    "background": {
+        "scripts": [
+            "./js/background.js"
+        ]
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "my title"
+    },
+    "options_page": "options.html",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "contextMenus",
+        "notifications",
+        "tabs",
+        "<all_urls>"
+    ],
+    "optional_permissions": [
+        "clipboardRead",
+        "desktopCapture",
+        "downloads"
+    ],
+    "manifest_version": 2,
+    "commands": {
+        "grab_selected_area": {
+            "description": "Select area"
+        },
+        "select_element": {
+            "description": "Select element"
+        }
+    }
+}
